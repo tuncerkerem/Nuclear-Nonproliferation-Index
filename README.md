@@ -1,6 +1,6 @@
 # Nuclear Maps of the World
 
-As part of the Columbia Center for Nuclear Studies, I devised a methodology to score countries by their nuclear program status, nuclear weapons count, defense spending score, nuclear weapons treaty count, nuclear energy safety treaty count, and nuclear energy usage. The end product was an interactive R Shiny dashboard that is on display on the Center's official website.
+As part of the Columbia Center for Nuclear Studies, I devised a methodology to score countries by their nuclear program status, nuclear weapons count, defense spending score, nuclear weapons treaty count, nuclear energy safety treaty count, and nuclear energy usage. The end product was an interactive R Shiny dashboard that is on display on the Center's official website. The scores were computed through investigating the percentiles.
 
 <img width="1232" alt="Screen Shot 2023-04-26 at 23 07 34" src="https://user-images.githubusercontent.com/63028345/234749954-136e28eb-8e0e-4bf7-82fa-fbee0d0223b4.png">
 
