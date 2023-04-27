@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://maps.googleapis.com/maps/api/js?key=undefined' type='text/javascript'></script><script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script> 
+<script type='text/javascript' src='https://www.google.com/jsapi'></script>
+<script type='text/javascript'>google.charts.load('42', {'packages':['geochart']});
+google.charts.setOnLoadCallback(drawVisualization);
+
+  function drawVisualization() {var data = new google.visualization.DataTable();
+
+ data.addColumn('string', 'Country');
+ data.addColumn('number', 'Value'); 
+ data.addColumn({type:'string', role:'tooltip'});var ivalue = new Array();
+
+ data.addRows([[{v:'US',f:'United States'},0,'C']]);
+ ivalue['US'] = 'https://k1project.columbia.edu/content/united-states-0';
+
+ data.addRows([[{v:'RU',f:'Russia'},1,'C']]);
+ ivalue['RU'] = 'https://k1project.columbia.edu/content/russia';
+
+ data.addRows([[{v:'GB',f:'United Kingdom'},2,'C']]);
+ ivalue['GB'] = 'https://k1project.columbia.edu/content/united-kingdom';
+
+ data.addRows([[{v:'FR',f:'France'},3,'F']]);
+ ivalue['FR'] = 'https://k1project.columbia.edu/content/france';
+
+ data.addRows([[{v:'CN',f:'China'},4,'A']]);
+ ivalue['CN'] = 'https://k1project.columbia.edu/content/china';
+
+ data.addRows([[{v:'IN',f:'India'},5,'A']]);
+ ivalue['IN'] = 'https://k1project.columbia.edu/content/india';
+
+ data.addRows([[{v:'PK',f:'Pakistan'},6,'B']]);
+ ivalue['PK'] = 'https://k1project.columbia.edu/content/pakistan';
+
+ data.addRows([[{v:'KP',f:'North Korea'},7,'A']]);
+ ivalue['KP'] = 'https://k1project.columbia.edu/content/north-korea';
+
+ data.addRows([[{v:'IL',f:'Israel'},8,'A']]);
+ ivalue['IL'] = 'https://k1project.columbia.edu/content/israel';
+
+ data.addRows([[{v:'TR',f:'Turkey'},9,'NA']]);
+ ivalue['TR'] = 'https://k1project.columbia.edu/content/turkey';
+
+ data.addRows([[{v:'BE',f:'Belgium'},10,'F+']]);
+ ivalue['BE'] = 'https://k1project.columbia.edu/content/belgium';
+
+ data.addRows([[{v:'DE',f:'Germany'},11,'B+']]);
+ ivalue['DE'] = 'https://k1project.columbia.edu/content/germany';
+
+ data.addRows([[{v:'IT',f:'Italy'},12,'A']]);
+ ivalue['IT'] = 'https://k1project.columbia.edu/content/italy';
+
+ data.addRows([[{v:'NL',f:'Netherlands'},13,'A']]);
+ ivalue['NL'] = 'https://k1project.columbia.edu/content/netherlands';
+
+ data.addRows([[{v:'AR',f:'Argentina'},14,'B']]);
+ ivalue['AR'] = 'https://k1project.columbia.edu/content/argentina';
+
+ data.addRows([[{v:'AM',f:'Armenia'},15,'D']]);
+ ivalue['AM'] = 'https://k1project.columbia.edu/content/armenia';
+
+ data.addRows([[{v:'BR',f:'Brazil'},16,'A']]);
+ ivalue['BR'] = 'https://k1project.columbia.edu/content/brazil';
+
+ data.addRows([[{v:'BG',f:'Bulgaria'},17,'F']]);
+ ivalue['BG'] = 'https://k1project.columbia.edu/content/bulgaria';
+
+ data.addRows([[{v:'CA',f:'Canada'},18,'C']]);
+ ivalue['CA'] = 'https://k1project.columbia.edu/content/canada';
+
+ data.addRows([[{v:'CZ',f:'Czech Republic'},19,'D']]);
+ ivalue['CZ'] = 'https://k1project.columbia.edu/content/czech-republic';
+
+ data.addRows([[{v:'FI',f:'Finland'},20,'D']]);
+ ivalue['FI'] = 'https://k1project.columbia.edu/content/finland';
+
+ data.addRows([[{v:'HU',f:'Hungary'},21,'F']]);
+ ivalue['HU'] = 'https://k1project.columbia.edu/content/hungary';
+
+ data.addRows([[{v:'IR',f:'Iran'},22,'A']]);
+ ivalue['IR'] = 'https://k1project.columbia.edu/content/iran';
+
+ data.addRows([[{v:'JP',f:'Japan'},23,'B']]);
+ ivalue['JP'] = 'https://k1project.columbia.edu/content/japan';
+
+ data.addRows([[{v:'KR',f:'South Korea'},24,'D']]);
+ ivalue['KR'] = 'https://k1project.columbia.edu/content/south-korea';
+
+ data.addRows([[{v:'MX',f:'Mexico'},25,'A']]);
+ ivalue['MX'] = 'https://k1project.columbia.edu/content/mexico';
+
+ data.addRows([[{v:'RO',f:'Romania'},26,'C']]);
+ ivalue['RO'] = 'https://k1project.columbia.edu/content/romania';
+
+ data.addRows([[{v:'SK',f:'Slovakia'},27,'F']]);
+ ivalue['SK'] = 'https://k1project.columbia.edu/content/slovakia';
+
+ data.addRows([[{v:'SI',f:'Slovenia'},28,'F']]);
+ ivalue['SI'] = 'https://k1project.columbia.edu/content/slovenia';
+
+ data.addRows([[{v:'ZA',f:'South Africa'},29,'B']]);
+ ivalue['ZA'] = 'https://k1project.columbia.edu/content/south-africa';
+
+ data.addRows([[{v:'ES',f:'Spain'},30,'C']]);
+ ivalue['ES'] = 'https://k1project.columbia.edu/content/spain';
+
+ data.addRows([[{v:'SE',f:'Sweden'},31,'D']]);
+ ivalue['SE'] = 'https://k1project.columbia.edu/content/sweden';
+
+ data.addRows([[{v:'CH',f:'Switzerland'},32,'D+']]);
+ ivalue['CH'] = 'https://k1project.columbia.edu/content/switzerland';
+
+ data.addRows([[{v:'TW',f:'Taiwan'},33,'B']]);
+ ivalue['TW'] = 'https://k1project.columbia.edu/content/taiwan';
+
+ data.addRows([[{v:'UA',f:'Ukraine'},34,'F']]);
+ ivalue['UA'] = 'https://k1project.columbia.edu/content/ukraine';
+
+ data.addRows([[{v:'AE',f:'United Arab Emirates'},35,'NA']]);
+ ivalue['AE'] = 'https://k1project.columbia.edu/content/united-arab-emirates';
+
+ data.addRows([[{v:'AU',f:'Australia'},36,'A']]);
+ ivalue['AU'] = 'https://k1project.columbia.edu/content/australia';
+
+ data.addRows([[{v:'BY',f:'Belarus'},37,'NA']]);
+ ivalue['BY'] = 'https://k1project.columbia.edu/content/belarus';
+
+ data.addRows([[{v:'KZ',f:'Kazakhstan'},38,'A']]);
+ ivalue['KZ'] = 'https://k1project.columbia.edu/content/kazakhstan';
+
+ data.addRows([[{v:'BD',f:'Bangladesh'},39,'NA']]);
+ ivalue['BD'] = 'https://k1project.columbia.edu/content/bangladesh';
+
+ var options = {
+ backgroundColor: {fill:'#FFFFFF',stroke:'#FFFFFF' ,strokeWidth:0 },
+ colorAxis:  {minValue: 0, maxValue: 39,  colors: ['#FFA500','#FFA500','#FFA500','#000000','#00FF00','#00FF00','#FFFF00','#00FF00','#00FF00','#808080','#00FF00','#FFFF00','#00FF00','#00FF00','#FFFF00','#FF0000','#00FF00','#000000','#FFA500','#FF0000','#FF0000','#000000','#00FF00','#FFFF00','#FF0000','#00FF00','#FFA500','#000000','#000000','#FFFF00','#FFA500','#FF0000','#FF0000','#FFFF00','#000000','#808080','#00FF00','#808080','#00FF00','#808080']},
+ legend: 'none',  
+ datalessRegionColor: '#F5F0E7',
+ displayMode: 'regions', 
+ enableRegionInteractivity: 'true', 
+ resolution: 'countries',
+ sizeAxis: {minValue: 1, maxValue:1,minSize:10,  maxSize: 10},
+ region:'world',
+ keepAspectRatio: true,
+ width:1280,
+ height:720,
+ tooltip: {textStyle: {color: '#444444'}, trigger:'focus', isHtml: false} 
+ };
+  var chart = new google.visualization.GeoChart(document.getElementById('map_1609985091802')); 
+  google.visualization.events.addListener(chart, 'select', function() {
+  var selection = chart.getSelection();
+  if (selection.length == 1) {
+  var selectedRow = selection[0].row;
+  var selectedRegion = data.getValue(selectedRow, 0);
+  if(ivalue[selectedRegion] != '') { window.open(ivalue[selectedRegion]);  }
+  }
+  });
+ chart.draw(data, options);
+ }
+ </script>
+ <div id='map_1609985091802'></div>
+</head>
+</html>
